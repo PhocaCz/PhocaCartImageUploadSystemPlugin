@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade" version="6.0">
+	<name>plg_system_phocacartimageupload</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>02/10/2026</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl>https://www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>6.1.8</version>
+	<description>PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\System\Phocacartimageupload</namespace>
+	<projectName>PhocaCartImageUploadSystemPlugin</projectName>
+
+	<media destination="plg_system_phocacartimageupload" folder="media">
+		<folder>css</folder>
+		<folder>vendor</folder>
+		<folder>js</folder>
+	</media>
+
+	<files>
+		<folder>src</folder>
+		<folder plugin="phocacartimageupload">services</folder>
+		<filename plugin="phocacartimageupload">FOSS.md</filename>
+		<filename plugin="phocacartimageupload">index.html</filename>
+		<filename plugin="phocacartimageupload">LICENSE</filename>
+		<filename plugin="phocacartimageupload">manifest.xml</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_phocacartimageupload.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_phocacartimageupload.sys.ini</language>
+	</languages>
+
+	<administration>
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.plg_system_phocacartimageupload.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.plg_system_phocacartimageupload.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="copy_images_batch" type="list" default="1" label="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_COPY_IMAGES_BATCH" description="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_COPY_IMAGES_BATCH_DESC">
+					<option value="0">PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_NO</option>
+					<option value="1">PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_YES</option>
+					<option value="2">PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_YES_ALL</option>
+				</field>
+				<field name="delete_images" type="list" default="0" label="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_DELETE_IMAGES" description="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_DELETE_IMAGES_DESC">
+					<option value="0">PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_DELETE_ONLY_ID_FOLDER</option>
+					<option value="1">PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_DELETE_ALL_PATHS</option>
+				</field>
+				<field name="delete_folder_product" type="list" default="0" label="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_DELETE_FOLDER_PRODUCT" description="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_DELETE_FOLDER_PRODUCT_DESC">
+					<option value="0">PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_NO</option>
+					<option value="1">PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_YES</option>
+				</field>
+
+				<field name="max_images" type="number" label="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_PARAM_MAX_IMAGES_LABEL" description="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_PARAM_MAX_IMAGES_DESC" default="50" min="0"/>
+				<field name="upload_batch_size" type="number" label="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_PARAM_UPLOAD_BATCH_SIZE_LABEL" description="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_PARAM_UPLOAD_BATCH_SIZE_DESC" default="5" min="1" max="50"/>
+
+				<field name="harden_upload_folder" type="radio" layout="joomla.form.field.radio.switcher" label="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_PARAM_HARDEN_UPLOAD_FOLDER_LABEL" description="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_PARAM_HARDEN_UPLOAD_FOLDER_DESC" default="1" class="btn-group btn-group-yesno">
+					<option value="0">PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_NO</option>
+					<option value="1">PLG_SYSTEM_PHOCACARTIMAGEUPLOAD_YES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" name="PLG_SYSTEM_PHOCACARTIMAGEUPLOAD" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaCartImageUploadSystemPlugin/main/manifest.xml]]></server>
+	</updateservers>
+</extension>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<updates>
+	<update>
+		<name><![CDATA[ Phoca Cart Image Upload System Plugin ]]></name>
+		<description><![CDATA[ Phoca Cart Image Upload System Plugin - alternative image upload Phoca Cart System plugin. ]]></description>
+		<element>phocacartimageupload</element>
+		<folder>system</folder>
+		<type>plugin</type>
+		<version>6.1.8</version>
+		<infourl title="Phoca Cart Image Upload System Plugin 6.1.8">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaCartImageUploadSystemPlugin/releases/download/6.1.8/plg_system_phocacartimageupload_v6.1.8.zip</downloadurl>
+		</downloads>
+		<sha512>66e6ce945bbdfe49d203e4b60b975d8ae1916da3ea931ecffcf4e2b9908a52579704e4f745dbdd054f23aa31989df3f89421b04c41aebb2179e96cadff5fe76b</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="6\.*"/>
+		<client>site</client>
+	</update>
+</updates>

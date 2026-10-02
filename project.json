@@ -1,0 +1,22 @@
+{
+	"author": "Jan Pavelka (www.phoca.cz)",
+	"authorUrl": "https://www.phoca.cz",
+	"copyright": "Jan Pavelka",
+	"license": "GNU/GPL",
+	"projectName": "PhocaCartImageUploadSystemPlugin",
+	"extensionName": "Phoca Cart Image Upload System Plugin",
+	"projectInitials" : "PC",				  
+	"description": "Phoca Cart Image Upload System Plugin - alternative image upload Phoca Cart System plugin.",
+	"projectUrl": "https://www.phoca.cz/phocacart",
+	"projectDocumentationUrl": "https://www.phoca.cz/documentation/category/115-phoca-cart",
+	"projectMainComponent": "Phoca Cart",
+	"projectMainComponentInfoUrl": "https://www.phoca.cz/project/phocacart-joomla-ecommerce",
+	"projectDemo" : {
+		"Joomla! - Phoca Cart Demo": "https://www.phoca.cz/phocacartdemo/"
+	},
+	"projectColor": "#129ed9",
+	"projectBranch": "main",
+	"nameSpace": "Joomla\\Plugin\\System\\Phocacartimageupload"
+}
+
+
